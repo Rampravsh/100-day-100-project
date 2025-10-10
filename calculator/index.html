@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calculator</title>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center min-h-screen bg-gray-100"
+  >
+    <h1 class="text-3xl font-bold mb-4">Calculator</h1>
+    <div class="calculator border p-4 bg-white rounded shadow-lg w-80">
+      <input
+        type="text"
+        id="display"
+        placeholder="type here"
+        class="w-full h-16 text-3xl text-right border-2 border-gray-300 rounded-md p-2 mb-4 bg-gray-200"
+      />
+      <div class="grid grid-cols-4 gap-2">
+        <button
+          id="clear"
+          class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
+        >
+          C
+        </button>
+        <button
+          id="divide"
+          class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+        >
+          /
+        </button>
+        <button
+          id="multiply"
+          class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+        >
+          *
+        </button>
+        <button
+          id="subtract"
+          class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+        >
+          -
+        </button>
+        <button
+          class="number bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+        >
+          7
+        </button>
+        <button
+          class="number bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+        >
+          8
+        </button>
+        <button
+          class="number bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+        >
+          9
+        </button>
+        <button
+          id="add"
+          class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+        >
+          +
+        </button>
+        <button
+          class="number bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+        >
+          4
+        </button>
+        <button
+          class="number bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+        >
+          5
+        </button>
+        <button
+          class="number bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+        >
+          6
+        </button>
+        <button
+          id="equals"
+          class="row-span-3 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+        >
+          =
+        </button>
+        <button
+          class="number bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+        >
+          1
+        </button>
+        <button
+          class="number bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+        >
+          2
+        </button>
+        <button
+          class="number bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+        >
+          3
+        </button>
+        <button
+          class="number col-span-2 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+        >
+          0
+        </button>
+        <button
+          class="number bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
+        >
+          .
+        </button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
