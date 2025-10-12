@@ -1,0 +1,126 @@
+body {
+  background-color: black;
+  height: 100vh;
+  color: aliceblue;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/040/890/255/small_2x/ai-generated-empty-wooden-table-on-the-natural-background-for-product-display-free-photo.jpg");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-div {
+  background-color: aliceblue;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  height: 500px;
+  width: 400px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  justify-content: left;
+}
+
+h1 {
+  color: black;
+}
+
+.input-box {
+  background-color: rgb(42, 42, 95);
+  width: 320px;
+  height: 40px;
+  border-radius: 20px 50px 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-box input {
+  border: none;
+  /* border-radius: 10px 0px 0px 10px; */
+  background-color: rgb(42, 42, 95);
+  outline: none;
+  font-size: 100%;
+  color: aliceblue;
+}
+
+.input-box button {
+  background-color: rgb(21, 160, 214);
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  color: aliceblue;
+}
+.date-box {
+  background-color: white;
+  color: black;
+  width: fit-content;
+  padding: 5px;
+  margin: 20px;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin-left: auto;
+}
+
+.hero-div {
+  display: flex;
+}
+
+.btn-div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.btn-div button {
+  background-color: rgb(42, 42, 95);
+  border: none;
+  margin-bottom: 15px;
+  height: 30px;
+  color: white;
+  border-radius: 50px;
+  /* padding: 5px; */
+}
+
+#sky-blue {
+  background-color: aqua;
+}
+
+.all-todo {
+  height: 300px;
+  overflow-x: auto;
+}
+
+.all-todo::-webkit-scrollbar {
+  /* background: #e21212; हल्का ग्रे */
+  /* border-radius: 5px; */
+  width: 0;
+  height: 0;
+}
+
+.single-todo {
+  height: 50px;
+  width: 270px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.single-todo span {
+  width: 240px;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.single-todo button {
+  border: none;
+  background-color: aliceblue;
+}
