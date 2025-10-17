@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary function of JavaScript?",
+    "category": "Fundamentals",
+    "options": [
+      "To style web pages (CSS).",
+      "To structure content (HTML).",
+      "To make web pages interactive and dynamic.",
+      "To manage server-side databases (SQL)."
+    ],
+    "answer": "To make web pages interactive and dynamic."
+  },
+  {
+    "id": 2,
+    "question": "Which operator compares only the value, potentially allowing type coercion?",
+    "category": "Operators",
+    "options": ["===", "==", "!=", "!=="],
+    "answer": "=="
+  },
+  {
+    "id": 3,
+    "question": "What feature allows function and variable declarations to be moved to the top of their scope during compilation?",
+    "category": "Scope",
+    "options": [
+      "Type Coercion",
+      "Event Bubbling",
+      "Hoisting",
+      "Garbage Collection"
+    ],
+    "answer": "Hoisting"
+  },
+  {
+    "id": 4,
+    "question": "A function bundled with its surrounding state (lexical environment) is known as a:",
+    "category": "Functions",
+    "options": ["Prototype", "Closure", "Callback", "Module"],
+    "answer": "Closure"
+  },
+  {
+    "id": 5,
+    "question": "Which keyword is **block-scoped** and can be re-assigned?",
+    "category": "Scope",
+    "options": ["var", "const", "let", "function"],
+    "answer": "let"
+  },
+  {
+    "id": 6,
+    "question": "What is the result of `typeof null` in JavaScript?",
+    "category": "Data Types",
+    "options": ["\"null\"", "\"undefined\"", "\"object\"", "\"number\""],
+    "answer": "\"object\""
+  },
+  {
+    "id": 7,
+    "question": "What are Promises primarily used to manage?",
+    "category": "Asynchronous",
+    "options": [
+      "Synchronous function calls.",
+      "CSS animations.",
+      "DOM manipulation.",
+      "Asynchronous operations (like API calls)."
+    ],
+    "answer": "Asynchronous operations (like API calls)."
+  },
+  {
+    "id": 8,
+    "question": "What is the correct way to enable strict mode in JavaScript?",
+    "category": "Fundamentals",
+    "options": [
+      "set Strict = true;",
+      "`use strict`;",
+      "strictMode(true);",
+      "// strict"
+    ],
+    "answer": "`use strict`;"
+  },
+  {
+    "id": 9,
+    "question": "The mechanism that checks if the Call Stack is empty to handle asynchronous operations is called the:",
+    "category": "Asynchronous",
+    "options": ["Garbage Collector", "Message Queue", "Event Loop", "Compiler"],
+    "answer": "Event Loop"
+  },
+  {
+    "id": 10,
+    "question": "Which ES6 feature allows unwrapping values from arrays or properties from objects into distinct variables?",
+    "category": "ES6+",
+    "options": [
+      "Arrow Functions",
+      "Spread Operator",
+      "Destructuring",
+      "Map/Set"
+    ],
+    "answer": "Destructuring"
+  }
+]
