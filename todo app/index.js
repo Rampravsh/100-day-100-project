@@ -22,6 +22,7 @@ addBtn.addEventListener("click", () => {
   // console.log((todo.children[1] = input.value));
   // console.log(todo);
   todoBox.appendChild(createTodo(input.value));
+  input.value = "";
 });
 // console.log(date);
 
@@ -30,9 +31,19 @@ const todayDate = new Date().toLocaleDateString();
 
 date.innerText = todayDate;
 
-// console.dir(todo.children[1]);
+// console.dir(todo);
 
 // const h1 = document.createElement("h1");
 // h1.innerHTML = "heoo";
 
 // console.dir(todoBox);
+
+let deleteBtn = document.querySelector(".fa-trash");
+
+const deleteTodo = (e) => {
+  if (e.target.classList.contains("fa-trash")) {
+    e.target.closest(".single-todo").remove();
+  }
+};
+
+todoBox.addEventListener("click", deleteTodo);
