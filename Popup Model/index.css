@@ -1,0 +1,16 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(156, 156, 226, 0.452);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.containt {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
