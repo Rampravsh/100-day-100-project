@@ -1,0 +1,60 @@
+header {
+  background-color: #e0f2f7; /* A light, modern blue-green */
+  display: flex;
+  align-items: center; /* Vertically center items */
+  justify-content: space-around;
+  padding: 1rem; /* Add some padding for better spacing */
+}
+header div {
+  background-color: #81d4fa; /* A modern, slightly darker blue for items */
+  padding: 0.6rem 1.2rem; /* Slightly more padding */
+  border-radius: 8px; /* Slightly rounded corners */
+  color: #333; /* Darker text for better contrast */
+  font-weight: bold;
+}
+.container {
+  background-color: #f0f8ff; /* A very light, modern blue */
+  border-radius: 12px; /* More rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 2rem;
+  margin: 2rem auto; /* Center the container */
+  max-width: 900px; /* Limit width for better readability */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.numBox {
+  background-color: #66bb6a; /* A modern, vibrant green */
+  color: #ffffff; /* White text for contrast */
+  padding: 0.8rem 1.2rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gameOver {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0e0d0d; /* White text for contrast */
+  padding: 2rem;
+  border-radius: 12px;
+}
+.resetBtn {
+  background-color: #42a5f5; /* A modern, bright blue */
+  color: #ffffff; /* White text for contrast */
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.resetBtn:hover {
+  background-color: #b0c3d3; /* Slightly darker blue on hover */
+}
