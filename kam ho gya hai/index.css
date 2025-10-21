@@ -1,0 +1,12 @@
+.listContainer {
+  display: flex;
+  padding: 20px;
+  gap: 1rem;
+  flex-direction: column;
+}
+.listItems {
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
