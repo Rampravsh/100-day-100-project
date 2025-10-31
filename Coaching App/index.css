@@ -1,0 +1,352 @@
+/* --- Global Styles & Variables --- */
+:root {
+  --primary-color: #007bff; /* Blue */
+  --secondary-color: #f7b731; /* Orange/Yellow for CTA contrast */
+  --dark-color: #343a40;
+  --light-color: #f8f9fa;
+  --text-color: #495057;
+  --border-radius: 8px;
+  --padding-section: 60px 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dark-color);
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--secondary-color);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  background: #ffcc66;
+}
+
+.btn-secondary {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+}
+
+.btn-secondary:hover {
+  background: #0056b3;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  margin-top: 30px;
+}
+
+.btn-outline:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* --- 1. Navigation Bar --- */
+#main-header {
+  background: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  color: var(--dark-color);
+  margin: 0 15px;
+  font-weight: 500;
+  padding: 5px 0;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+.btn-login {
+  background: var(--primary-color);
+  color: white;
+  padding: 8px 15px;
+}
+
+.btn-login:hover {
+  background: #0056b3;
+}
+
+/* --- 2. Hero Section --- */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("hero.png") no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding-top: 80px; /* Offset for the sticky header */
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.hero-content small {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+/* --- 3. Feature Section (Why Choose Us) --- */
+.feature-section {
+  padding: var(--padding-section);
+  background: var(--light-color);
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  text-align: center;
+}
+
+.feature-card {
+  flex: 1;
+  padding: 30px;
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card i {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+/* --- 4. Courses Section --- */
+.courses-section {
+  padding: var(--padding-section);
+  text-align: center;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.course-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: var(--border-radius);
+  padding: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s;
+}
+
+.course-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background: var(--light-color);
+  color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin: 0 auto 15px;
+}
+
+.course-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.course-card .details {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+/* --- 5. Instructors Section --- */
+.instructors-section {
+  padding: var(--padding-section);
+  background: var(--light-color);
+  text-align: center;
+}
+
+.instructor-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.instructor-card {
+  width: 250px;
+  padding: 20px;
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.photo-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #e9ecef;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.instructor-card h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.instructor-card p {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.instructor-card small {
+  font-style: italic;
+  display: block;
+}
+
+/* --- Responsive Design (Basic) --- */
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    margin: 10px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .feature-grid {
+    flex-direction: column;
+  }
+
+  .instructor-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .instructor-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
