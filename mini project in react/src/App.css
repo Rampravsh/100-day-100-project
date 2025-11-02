@@ -40,3 +40,41 @@
 .read-the-docs {
   color: #888;
 }
+.full-screen-element {
+  width: 100vw; /* पूरी स्क्रीन की चौड़ाई (100% viewport width) */
+  height: 100vh; /* पूरी स्क्रीन की ऊँचाई (100% viewport height) */
+  margin: 0; /* मार्जिन हटा दें ताकि कोई अतिरिक्त खाली जगह न हो */
+  padding: 0; /* पैडिंग हटा दें */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-edit{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btn-delete{
+  background-color: #f44336; /* Red */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+
+}
