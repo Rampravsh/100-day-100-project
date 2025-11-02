@@ -20,12 +20,10 @@ const Box = ({ type, setDisplay }) => {
             justifyContent: "center",
             alignItems: "center",
             flexDirection: "column",
-            height:'200px'
+            height: "200px",
           }}
         >
-          <div style={{ fontSize: "20px", textAlign: "center" }}>
-            🚧 {type} 🚧{" "}
-          </div>
+          <div style={{ fontSize: "20px", textAlign: "center" }}>⚠️{type}</div>
           <p>Are you sure you want to {type.toLowerCase()} this?</p>
           <div>
             <button style={{ backgroundColor: "red", marginRight: "10px" }}>
