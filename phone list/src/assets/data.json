@@ -1,0 +1,142 @@
+[
+  {
+    "id": 101,
+    "name": "Galaxy S23 Ultra",
+    "brand": "Samsung",
+    "price_usd": 1199.99,
+    "specs": {
+      "storage": "256GB",
+      "ram": "8GB",
+      "camera": "200MP Main",
+      "display": "Dynamic AMOLED 2X"
+    },
+    "image_url": "https://cdn.pixabay.com/photo/2022/12/26/21/58/abstract-phone-wallpaper-7679888_640.jpg",
+    "in_stock": true
+  },
+  {
+    "id": 102,
+    "name": "iPhone 15 Pro Max",
+    "brand": "Apple",
+    "price_usd": 1299.0,
+    "specs": {
+      "storage": "256GB",
+      "ram": "8GB",
+      "camera": "48MP Main",
+      "display": "Super Retina XDR"
+    },
+    "image_url": "https://cdn.pixabay.com/photo/2015/01/08/15/44/woman-593133_640.jpg",
+    "in_stock": true
+  },
+  {
+    "id": 103,
+    "name": "Pixel 8 Pro",
+    "brand": "Google",
+    "price_usd": 999.0,
+    "specs": {
+      "storage": "128GB",
+      "ram": "12GB",
+      "camera": "50MP Main",
+      "display": "Actua Display"
+    },
+    "image_url": "https://cdn.pixabay.com/photo/2024/01/31/19/25/sunset-8544672_640.jpg",
+    "in_stock": true
+  },
+  {
+    "id": 104,
+    "name": "OnePlus 11",
+    "brand": "OnePlus",
+    "price_usd": 699.0,
+    "specs": {
+      "storage": "128GB",
+      "ram": "8GB",
+      "camera": "50MP Main",
+      "display": "Fluid AMOLED"
+    },
+    "image_url": "https://cdn.pixabay.com/photo/2023/08/07/13/44/tree-8175062_640.jpg",
+    "in_stock": true
+  },
+  {
+    "id": 105,
+    "name": "Xiaomi 13 Pro",
+    "brand": "Xiaomi",
+    "price_usd": 899.99,
+    "specs": {
+      "storage": "256GB",
+      "ram": "12GB",
+      "camera": "50MP Main (Triple)",
+      "display": "E6 AMOLED"
+    },
+    "image_url": "https://cdn.pixabay.com/photo/2022/12/26/21/58/abstract-phone-wallpaper-7679884_640.jpg",
+    "in_stock": false
+  },
+  {
+    "id": 106,
+    "name": "Moto G Stylus (2023)",
+    "brand": "Motorola",
+    "price_usd": 299.99,
+    "specs": {
+      "storage": "64GB",
+      "ram": "4GB",
+      "camera": "50MP Main",
+      "display": "6.5 inch HD+"
+    },
+    "image_url": "https://cdn.pixabay.com/photo/2023/05/30/17/20/woman-8029209_640.jpg",
+    "in_stock": true
+  },
+  {
+    "id": 107,
+    "name": "iPhone SE (3rd Gen)",
+    "brand": "Apple",
+    "price_usd": 429.0,
+    "specs": {
+      "storage": "64GB",
+      "ram": "4GB",
+      "camera": "12MP Main",
+      "display": "Retina HD"
+    },
+    "image_url": "https://cdn.pixabay.com/photo/2022/12/26/21/58/abstract-phone-wallpaper-7679886_640.jpg",
+    "in_stock": true
+  },
+  {
+    "id": 108,
+    "name": "Nokia G400 5G",
+    "brand": "Nokia",
+    "price_usd": 259.0,
+    "specs": {
+      "storage": "128GB",
+      "ram": "6GB",
+      "camera": "48MP Main",
+      "display": "6.6 inch 120Hz"
+    },
+    "image_url": "https://cdn.pixabay.com/photo/2021/12/26/17/34/flowers-6895608_640.jpg",
+    "in_stock": true
+  },
+  {
+    "id": 109,
+    "name": "Asus ROG Phone 7",
+    "brand": "Asus",
+    "price_usd": 999.99,
+    "specs": {
+      "storage": "512GB",
+      "ram": "16GB",
+      "camera": "50MP Main",
+      "display": "AMOLED 165Hz"
+    },
+    "image_url": "https://cdn.pixabay.com/photo/2019/06/30/11/56/street-4307896_640.jpg",
+    "in_stock": false
+  },
+  {
+    "id": 110,
+    "name": "Samsung Galaxy A54 5G",
+    "brand": "Samsung",
+    "price_usd": 449.99,
+    "specs": {
+      "storage": "128GB",
+      "ram": "6GB",
+      "camera": "50MP Main",
+      "display": "Super AMOLED"
+    },
+    "image_url": "https://cdn.pixabay.com/photo/2024/05/02/13/45/cherry-8734780_640.jpg",
+    "in_stock": true
+  }
+]

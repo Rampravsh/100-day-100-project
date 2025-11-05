@@ -20,7 +20,14 @@ addBtn.addEventListener("click", () => {
 async function fetchData() {
   let response = await fetch(API);
   let data = await response.json();
-  console.log(data);
-  data.map((item) => createTodo(item.text));
+  data.forEach((element) => {
+    createTodo(element.text);
+  });
+}
+async function postData() {
+  let response = await fetch(API,{
+    method:'POST'
+  });
+  let data = await response.json();
 }
 fetchData();
