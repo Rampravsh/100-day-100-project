@@ -3,7 +3,9 @@ const addBtn = document.querySelector(".add_btn");
 const allTodo = document.querySelector(".all_todo");
 let API = "https://690b432b6ad3beba00f427ae.mockapi.io/api/v1/todos";
 
-const createTodo = (value) => {
+// here created todon function
+
+const createTodo = (value, id) => {
   const todo = document.createElement("div");
   todo.innerHTML = `<div class="single_todo">
           <p>${value}</p>
@@ -11,23 +13,64 @@ const createTodo = (value) => {
           <button class="delet_btn">delet</button>
         </div>`;
   allTodo.prepend(todo);
+  let deletBtn = todo.querySelector(".delet_btn");
+  deletBtn.addEventListener("click", () => {
+    // console.log(value, id);
+    deleteData(id);
+  });
 };
 
+// evevtlistener for post todo
+
 addBtn.addEventListener("click", () => {
-  createTodo(input.value);
+  if (input.value === "") {
+    alert("plese add todo first");
+    return;
+  }
+  postData();
   input.value = "";
 });
+
+//fetch data function
+
 async function fetchData() {
   let response = await fetch(API);
   let data = await response.json();
-  data.forEach((element) => {
-    createTodo(element.text);
-  });
+  if (data) {
+    allTodo.innerHTML = "";
+    data.forEach((element) => {
+      createTodo(element.text, element.id);
+    });
+  }
 }
+
+//post data function
+
 async function postData() {
-  let response = await fetch(API,{
-    method:'POST'
+  let value = input.value;
+  let objData = {
+    text: value.trim(),
+  };
+  let response = await fetch(API, {
+    method: "POST",
+    headers: {
+      "content-Type": "application/json",
+    },
+    body: JSON.stringify(objData),
   });
-  let data = await response.json();
+  if (response.status === 201) {
+    fetchData();
+  }
+}
+
+// delet data function
+
+async function deleteData(id) {
+  let response = await fetch(`${API}/${id}`, {
+    method: "DELETE",
+  });
+  if (response.ok) {
+    fetchData();
+  }
 }
 fetchData();
