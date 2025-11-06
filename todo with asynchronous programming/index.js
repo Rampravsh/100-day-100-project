@@ -106,6 +106,5 @@ async function updateData(id, updateInput) {
   if (response.ok) {
     fetchData();
   }
-  console.log(response);
 }
 fetchData();
