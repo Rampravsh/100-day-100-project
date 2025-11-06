@@ -18,7 +18,23 @@ const createTodo = (value, id) => {
     // console.log(value, id);
     deleteData(id);
   });
+  let editBtn = todo.querySelector(".edit_btn");
+  editBtn.addEventListener("click", () => forUpdateTodo(todo, id, value));
 };
+
+//for updating todo inner Html function
+
+function forUpdateTodo(todo, id, value) {
+  todo.innerHTML = `<div class="single_todo">
+          <input class='update_input' type="text" value="${value}">
+          <button class="save_btn">Save</button>
+        </div>`;
+  let updataInput = todo.querySelector(".update_input");
+  let saveBtn = todo.querySelector(".save_btn");
+  saveBtn.addEventListener("click", () => {
+    updateData(id, updataInput);
+  });
+}
 
 // evevtlistener for post todo
 
@@ -72,5 +88,24 @@ async function deleteData(id) {
   if (response.ok) {
     fetchData();
   }
+}
+
+// update data function
+async function updateData(id, updateInput) {
+  let value = updateInput.value;
+  let objData = {
+    text: value.trim(),
+  };
+  let response = await fetch(`${API}/${id}`, {
+    method: "PUT",
+    headers: {
+      "content-Type": "application/json",
+    },
+    body: JSON.stringify(objData),
+  });
+  if (response.ok) {
+    fetchData();
+  }
+  console.log(response);
 }
 fetchData();
